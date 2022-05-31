@@ -51,7 +51,11 @@ themes/dev/images/
 as this will simply and correctly reflect the defined file path for your new development theme.
 
 
-Then, you would dowload the included attachment "Upload.zip" shared below (as such contains various needed files) and extract such and upload the contents to your forum root directory as the containing files inside are correctly place so you should be fine with factoring simply that just when you extract the like the mybb dist core package "upload" is = to forum root directory, hopefully that makes sense on the ease of simply downloading and extracting the attachment and then uploading correctly...
+Then, you would download the included attachment "Upload.zip" shared below (as such contains various needed files) and extract such and upload the contents to your forum root directory as the containing files inside are correctly place so you should be fine with factoring simply that just when you extract the like the mybb dist core package "upload" is = to forum root directory, hopefully that makes sense on the ease of simply downloading and extracting the attachment and then uploading correctly...
+
+Required files:
+
+https://github.com/ic-myXMB/MYBB-THEME_MYBBCOMMLIKE/blob/main/Upload.zip
 
 
 in this new theme add a stylesheet (for example named: "main.css") attached globally. (note: that you can name it whatever you want, and main.css is just mentioned as an example)
