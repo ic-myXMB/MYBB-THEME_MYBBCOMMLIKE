@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <theme name="MYBBCOMMLIKE" version="1830">
 	<properties>
-		<templateset><![CDATA[43]]></templateset>
+		<templateset><![CDATA[48]]></templateset>
 		<editortheme><![CDATA[mybb.css]]></editortheme>
 		<imgdir><![CDATA[themes/mybbcommlike/images]]></imgdir>
 		<logo><![CDATA[themes/mybbcommlike/images/logo-knockout.png]]></logo>
 		<tablespace><![CDATA[5]]></tablespace>
 		<borderwidth><![CDATA[0]]></borderwidth>
-		<color><![CDATA[]]></color>
-		<disporder><![CDATA[a:8:{s:10:"global.css";i:1;s:10:"usercp.css";i:2;s:9:"modcp.css";i:3;s:16:"star_ratings.css";i:4;s:14:"showthread.css";i:5;s:17:"thread_status.css";i:6;s:8:"css3.css";i:7;s:8:"main.css";i:9;}]]></disporder>
+		<colors><![CDATA[a:10:{s:5:"black";s:5:"Black";s:4:"calm";s:4:"Calm";s:4:"dawn";s:4:"Dawn";s:5:"earth";s:5:"Earth";s:5:"flame";s:5:"Flame";s:4:"leaf";s:4:"Leaf";s:5:"night";s:5:"Night";s:3:"sun";s:3:"Sun";s:8:"twilight";s:8:"Twilight";s:5:"water";s:5:"Water";}]]></colors>
+		<disporder><![CDATA[a:18:{s:10:"global.css";i:1;s:10:"usercp.css";i:2;s:9:"modcp.css";i:3;s:16:"star_ratings.css";i:4;s:14:"showthread.css";i:5;s:17:"thread_status.css";i:6;s:8:"css3.css";i:7;s:8:"main.css";i:9;s:9:"black.css";i:10;s:8:"calm.css";i:11;s:8:"dawn.css";i:12;s:9:"earth.css";i:13;s:9:"flame.css";i:14;s:8:"leaf.css";i:15;s:9:"night.css";i:16;s:7:"sun.css";i:17;s:12:"twilight.css";i:18;s:9:"water.css";i:19;}]]></disporder>
 	</properties>
 	<stylesheets>
 		<stylesheet name="showthread.css" attachedto="showthread.php" version="1830"><![CDATA[ul.thread_tools,
@@ -55,7 +55,8 @@ ul.thread_tools li.poll {
 	padding: 20px;
 }
 
-]]>
+
+		]]>
 		</stylesheet>
 		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1830"><![CDATA[.star_rating,
 .star_rating li a:hover,
@@ -143,7 +144,85 @@ td .star_rating {
 	float: left;
 	vertical-align: middle;
 	padding-right: 5px;
-}]]>
+}
+		]]>
+		</stylesheet>
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1830"><![CDATA[.thread_status {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url('themes/mybbcommlike/images/folders_sprite.png');
+	background-repeat: no-repeat;
+}
+
+.thread_status.dot_folder {
+	background-position: 0 0;
+}
+
+.thread_status.dot_hotfolder {
+	background-position: 0 -20px;
+}
+
+.thread_status.dot_hotclosefolder {
+	background-position: 0 -40px;
+}
+
+.thread_status.dot_closefolder {
+	background-position: 0 -60px;
+}
+
+.thread_status.dot_newfolder {
+	background-position: 0 -80px;
+}
+
+.thread_status.dot_newhotfolder {
+	background-position: 0 -100px;
+}
+
+.thread_status.dot_newhotclosefolder {
+	background-position: 0 -120px;
+}
+
+.thread_status.dot_newclosefolder {
+	background-position: 0 -140px;
+}
+
+.thread_status.folder {
+	background-position: 0 -160px;
+}
+
+.thread_status.hotfolder {
+	background-position: 0 -180px;
+}
+
+.thread_status.hotclosefolder {
+	background-position: 0 -200px;
+}
+
+.thread_status.closefolder {
+	background-position: 0 -220px;
+}
+
+.thread_status.movefolder {
+	background-position: 0 -240px;
+}
+
+.thread_status.newfolder {
+	background-position: 0 -260px;
+}
+
+.thread_status.newhotfolder {
+	background-position: 0 -280px;
+}
+
+.thread_status.newhotclosefolder {
+	background-position: 0 -300px;
+}
+
+.thread_status.newclosefolder {
+	background-position: 0 -320px;
+}
+		]]>
 		</stylesheet>
 		<stylesheet name="usercp.css" attachedto="usercp.php|private.php" version="1830"><![CDATA[.usercp_nav_item {
 	display: block;
@@ -297,83 +376,8 @@ td .star_rating {
 
 .new_pm {
 	font-weight: bold;
-}]]>
-		</stylesheet>
-		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1830"><![CDATA[.thread_status {
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	background-image: url('themes/mybbcommlike/images/folders_sprite.png');
-	background-repeat: no-repeat;
 }
-
-.thread_status.dot_folder {
-	background-position: 0 0;
-}
-
-.thread_status.dot_hotfolder {
-	background-position: 0 -20px;
-}
-
-.thread_status.dot_hotclosefolder {
-	background-position: 0 -40px;
-}
-
-.thread_status.dot_closefolder {
-	background-position: 0 -60px;
-}
-
-.thread_status.dot_newfolder {
-	background-position: 0 -80px;
-}
-
-.thread_status.dot_newhotfolder {
-	background-position: 0 -100px;
-}
-
-.thread_status.dot_newhotclosefolder {
-	background-position: 0 -120px;
-}
-
-.thread_status.dot_newclosefolder {
-	background-position: 0 -140px;
-}
-
-.thread_status.folder {
-	background-position: 0 -160px;
-}
-
-.thread_status.hotfolder {
-	background-position: 0 -180px;
-}
-
-.thread_status.hotclosefolder {
-	background-position: 0 -200px;
-}
-
-.thread_status.closefolder {
-	background-position: 0 -220px;
-}
-
-.thread_status.movefolder {
-	background-position: 0 -240px;
-}
-
-.thread_status.newfolder {
-	background-position: 0 -260px;
-}
-
-.thread_status.newhotfolder {
-	background-position: 0 -280px;
-}
-
-.thread_status.newhotclosefolder {
-	background-position: 0 -300px;
-}
-
-.thread_status.newclosefolder {
-	background-position: 0 -320px;
-}]]>
+		]]>
 		</stylesheet>
 		<stylesheet name="modcp.css" attachedto="modcp.php" version="1830"><![CDATA[.modcp_nav_item {
 	display: block;
@@ -471,7 +475,8 @@ td .star_rating {
 	background: #efefef;
 	border: 1px solid #ccc;
 	text-decoration: none;
-}]]>
+}
+		]]>
 		</stylesheet>
 		<stylesheet name="css3.css" version="1830"><![CDATA[tr td.trow1:first-child,
 tr td.trow2:first-child,
@@ -613,7 +618,8 @@ div.error {
 	-moz-border-radius: 6px;
     	-webkit-border-radius: 6px;
    	 border-radius: 6px;
-}]]>
+}
+		]]>
 		</stylesheet>
 		<stylesheet name="main.css" version="1830"><![CDATA[body{
 	text-align: unset;
@@ -1289,7 +1295,8 @@ fieldset{
 .social .discord a{
     background: url('themes/mybbcommlike/images/discord.png') left center no-repeat;
 }
-]]>
+
+		]]>
 		</stylesheet>
 		<stylesheet name="global.css" version="1830"><![CDATA[body {
 	background: #fff;
@@ -3111,6 +3118,602 @@ div.jqi .jqisubstate .jqibuttons button{
 .jqi .jqiarrowrb{ right: -20px; bottom: 10px; border-left-color: #ffffff; }
 
 /** Impromptu End */
+
+		]]>
+		</stylesheet>
+		<stylesheet name="black.css" attachedto="black" version="1830"><![CDATA[.main-menu__links__item--active {
+    background: #202121 !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #333434 !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #555;
+}
+#logo {
+	background: #202020 url(themes/mybbcommlike/images/colors/black_header.png) top left repeat-x;
+	border-bottom: 1px solid #000;
+}
+#header ul.menu li a {
+	color: #fff;
+}
+#panel .upper {
+	background: #dcdbdc url(themes/mybbcommlike/images/colors/black_tcat.png) repeat-x;
+	color: #000;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #bbb;
+}
+#panel .upper a:link,
+#panel .upper a:visited,
+#panel .upper a:hover,
+#panel .upper a:active {
+	color: #000;
+}
+#panel input.textbox {
+	border-color: #ccc;
+}
+#panel input.button {
+	background: #202121 url(themes/mybbcommlike/images/colors/black_thead.png) top left repeat-x;
+	color: #fff;
+	border-color: #000;
+}
+.thead {
+	background: #202121 url(images/colors/black_thead.png) top left repeat-x;
+	border-bottom: 1px solid #000;
+}
+.tcat {
+	background: #dcdbdc url(images/colors/black_tcat.png) repeat-x;
+	color: #000000;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #bbb;
+}
+.tcat a:link,
+.tcat a:visited,
+.tcat a:hover,
+.tcat a:active {
+	color: #000000;
+}
+.thead input.textbox,
+.thead select {
+	border: 1px solid #111;
+}
+.popup_menu .popup_item:hover {
+	background: #333;
+	color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #333;
+	color: #fff;
+}
+.pagination a:hover {
+	background-color: #333;
+	color: #fff;
+	border-color: #000;
+}]]>
+		</stylesheet>
+		<stylesheet name="calm.css" attachedto="calm" version="1830"><![CDATA[.main-menu__links__item--active {
+    background: #385947 !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #48715b !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #48715b;
+}
+#logo {
+	background: #385947 url(themes/mybbcommlike/images/colors/calm_header.png) top left repeat-x;
+	border-bottom: 1px solid #263c30;
+}
+#header ul.menu li a {
+	color: #fff;
+}
+#panel input.button {
+	background: #385947 url(themes/mybbcommlike/images/colors/calm_thead.png) top left repeat-x;
+}
+.thead {
+	background: #385947 url(themes/mybbcommlike/images/colors/calm_thead.png) top left repeat-x;
+	color: #ffffff;
+	border-bottom: 1px solid #263c30;
+}
+.thead input.textbox,
+.thead select {
+	border: 1px solid #263c30;
+}
+.popup_menu .popup_item:hover {
+	background: #48715b;
+	color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #48715b;
+	color: #fff;
+}
+.pagination a:hover {
+	background-color: #48715b;
+	color: #fff;
+	border-color: #263c30;
+}]]>
+		</stylesheet>
+		<stylesheet name="dawn.css" attachedto="dawn" version="1830"><![CDATA[
+.main-menu__links__item--active {
+    background: #d56c2c !important;
+}
+
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #DA7736 !important;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #d56c2c;
+}
+
+#logo {
+	background: #d56c2c url(themes/mybbcommlike/images/colors/dawn_header.png) top left repeat-x;
+	border-bottom: 1px solid #011929;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #d56c2c url(themes/mybbcommlike/images/colors/dawn_thead.png) top left repeat-x;
+}
+
+.thead {
+	background: #d56c2c url(themes/mybbcommlike/images/colors/dawn_thead.png) top left repeat-x;
+	border-bottom: 1px solid #9a4e20;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #9a4e20;
+}
+
+.popup_menu .popup_item:hover {
+	background: #f2a555;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #f2a555;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #f2a555;
+	color: #fff;
+	border-color: #9a4e20;
+}
+
+]]>
+		</stylesheet>
+		<stylesheet name="earth.css" attachedto="earth" version="1830"><![CDATA[
+.main-menu__links__item--active {
+    background: #4a3a2e !important;
+}
+
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #6d5545 !important;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #6d5545;
+}
+
+#logo {
+	background: #4a3a2e url(themes/mybbcommlike/images/colors/earth_header.png) top left repeat-x;
+	border-bottom: 1px solid #31261e;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #4a3b2f url(themes/mybbcommlike/images/colors/earth_thead.png) top left repeat-x;
+}
+
+.thead {
+	background: #4a3b2f url(themes/mybbcommlike/images/colors/earth_thead.png) top left repeat-x;
+	border-bottom: 1px solid #31261e;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #31261e;
+}
+
+.popup_menu .popup_item:hover {
+	background: #6d5545;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #6d5545;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #6d5545;
+	color: #fff;
+	border-color: #31261e;
+}
+
+]]>
+		</stylesheet>
+		<stylesheet name="flame.css" attachedto="flame" version="1830"><![CDATA[
+.main-menu__links__item--active {
+    background: #750000 !important;
+}
+
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #a20000 !important;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #a20000;
+}
+
+#logo {
+	background: #750000 url(themes/mybbcommlike/images/colors/flame_header.png) top left repeat-x;
+	border-bottom: 1px solid #550000;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #750000 url(themes/mybbcommlike/images/colors/flame_thead.png) top left repeat-x;
+}
+
+.thead {
+	background: #750000 url(themes/mybbcommlike/images/colors/flame_thead.png) top left repeat-x;
+	border-bottom: 1px solid #550000;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #550000;
+}
+
+.popup_menu .popup_item:hover {
+	background: #a20000;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #a20000;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #a20000;
+	color: #fff;
+	border-color: #550000;
+}
+
+]]>
+		</stylesheet>
+		<stylesheet name="leaf.css" attachedto="leaf" version="1830"><![CDATA[
+.main-menu__links__item--active {
+    background: #386e21 !important;
+}
+
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #5aaf33 !important;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #5aaf33;
+}
+
+#logo {
+	background: #386e21 url(themes/mybbcommlike/images/colors/leaf_header.png) top left repeat-x;
+	border-bottom: 1px solid #234615;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #386e21 url(themes/mybbcommlike/images/colors/leaf_thead.png) top left repeat-x;
+}
+
+.thead {
+	background: #386e21 url(themes/mybbcommlike/images/colors/leaf_thead.png) top left repeat-x;
+	border-bottom: 1px solid #234615;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #234615;
+}
+
+.popup_menu .popup_item:hover {
+	background: #5aaf33;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #5aaf33;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #5aaf33;
+	color: #fff;
+	border-color: #234615;
+}
+
+]]>
+		</stylesheet>
+		<stylesheet name="night.css" attachedto="night" version="1830"><![CDATA[
+.main-menu__links__item--active {
+    background: #022338 !important;
+}
+
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #023a61 !important;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #023a61;
+}
+
+#logo {
+	background: #022338 url(themes/mybbcommlike/images/colors/night_header.png) top left repeat-x;
+	border-bottom: 1px solid #011929;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #022338 url(themes/mybbcommlike/images/colors/night_thead.png) top left repeat-x;
+}
+
+.thead {
+	background: #022338 url(themes/mybbcommlike/images/colors/night_thead.png) top left repeat-x;
+	border-bottom: 1px solid #011929;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #011929;
+}
+
+.popup_menu .popup_item:hover {
+	background: #023a61;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #023a61;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #023a61;
+	color: #fff;
+	border-color: #011929;
+}
+
+]]>
+		</stylesheet>
+		<stylesheet name="sun.css" attachedto="sun" version="1830"><![CDATA[
+.main-menu__links__item--active {
+    background: #ffdd4d !important;
+	color: #000 !important;
+}
+
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #555 !important;
+	color: #000 !important;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #555;
+}
+
+#logo {
+	background: #ffdd4d url(themes/mybbcommlike/images/colors/sun_header.png) top left repeat-x;
+	border-bottom: 1px solid #111;
+}
+
+#header ul.menu li a {
+	color: #000;
+}
+
+#panel input.button {
+	background: #ffdd4d url(themes/mybbcommlike/images/colors/sun_thead.png) top left repeat-x;
+	color: #000;
+}
+
+.thead {
+	background: #ffdd4d url(themes/mybbcommlike/images/colors/sun_thead.png) top left repeat-x;
+	border-bottom: 1px solid #ffaf1a;
+	color: #000;
+}
+
+.thead a:link,
+.thead a:visited,
+.thead a:hover,
+.thead a:active {
+	color: #000;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #ffaf1a;
+}
+
+.popup_menu .popup_item:hover {
+	background: #ffea9c;
+	color: #000;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #ffea9c;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #ffea9c;
+	color: #000;
+	border-color: #ffaf1a;
+}
+
+]]>
+		</stylesheet>
+		<stylesheet name="twilight.css" attachedto="twilight" version="1830"><![CDATA[
+.main-menu__links__item--active {
+    background: #273a46 !important;
+}
+
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #426276 !important;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #426276;
+}
+
+#logo {
+	background: #273a46 url(themes/mybbcommlike/images/colors/twilight_header.png) top left repeat-x;
+	border-bottom: 1px solid #1d2b34;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #273a46 url(themes/mybbcommlike/images/colors/twilight_thead.png) top left repeat-x;
+}
+
+.thead {
+	background: #273a46 url(themes/mybbcommlike/images/colors/twilight_thead.png) top left repeat-x;
+	border-bottom: 1px solid #1d2b34;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #1d2b34;
+}
+
+.popup_menu .popup_item:hover {
+	background: #426276;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #426276;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #426276;
+	color: #fff;
+	border-color: #1d2b34;
+}
+
+]]>
+		</stylesheet>
+		<stylesheet name="water.css" attachedto="water" version="1830"><![CDATA[
+.main-menu__links__item--active {
+    background: #1e6365 !important;
+}
+
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #2d9595 !important;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #2d9595;
+}
+
+#logo {
+	background: #1e6365 url(themes/mybbcommlike/images/colors/water_header.png) top left repeat-x;
+	border-bottom: 1px solid #133f41;
+}
+
+#header ul.menu li a {
+	color: #fff;
+}
+
+#panel input.button {
+	background: #1e6365 url(themes/mybbcommlike/images/colors/water_thead.png) top left repeat-x;
+}
+
+.thead {
+	background: #1e6365 url(themes/mybbcommlike/images/colors/water_thead.png) top left repeat-x;
+	border-bottom: 1px solid #133f41;
+}
+
+.thead input.textbox,
+.thead select {
+	border: 1px solid #133f41;
+}
+
+.popup_menu .popup_item:hover {
+	background: #2d9595;
+	color: #fff;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #2d9595;
+	color: #fff;
+}
+
+.pagination a:hover {
+	background-color: #2d9595;
+	color: #fff;
+	border-color: #133f41;
+}
+
 ]]>
 		</stylesheet>
 	</stylesheets>

@@ -1146,3 +1146,629 @@ add this after the existing content you already added...
 [/code]
 
 Now, this simply is a starting point and by no means a finished project or what not and simply gets you started by adding a progress bar to a top menu, adds a top menu, some fonts, headroom.js, the footer, as well as the notices and social links and simply gets you started on something you can continue to expand upon simply provided if at all found helpful. Best of luck! 
+
+
+
+
+Now, to add all the color.css stylesheets that normally are contained within defualt theme but modified to work with this edit theme settings:
+
+
+Manage Colors -> Manage Colors
+
+Add:
+[code]
+black=Black
+calm=Calm
+dawn=Dawn
+earth=Earth
+flame=Flame
+leaf=Leaf
+night=Night
+sun=Sun
+twilight=Twilight
+water=Water
+[/code]
+
+
+Add Stylesheet to Dev:
+
+
+black.css
+Attached to color setting Black
+
+Add:
+
+[code]
+.main-menu__links__item--active {
+    background: #202121 !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #333434 !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #555;
+}
+#logo {
+    background: #202020 url(themes/dev/images/colors/black_header.png) top left repeat-x;
+    border-bottom: 1px solid #000;
+}
+#header ul.menu li a {
+    color: #fff;
+}
+#panel .upper {
+    background: #dcdbdc url(themes/dev/images/colors/black_tcat.png) repeat-x;
+    color: #000;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #bbb;
+}
+#panel .upper a:link,
+#panel .upper a:visited,
+#panel .upper a:hover,
+#panel .upper a:active {
+    color: #000;
+}
+#panel input.textbox {
+    border-color: #ccc;
+}
+#panel input.button {
+    background: #202121 url(themes/dev/images/colors/black_thead.png) top left repeat-x;
+    color: #fff;
+    border-color: #000;
+}
+.thead {
+    background: #202121 url(images/colors/black_thead.png) top left repeat-x;
+    border-bottom: 1px solid #000;
+}
+.tcat {
+    background: #dcdbdc url(images/colors/black_tcat.png) repeat-x;
+    color: #000000;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #bbb;
+}
+.tcat a:link,
+.tcat a:visited,
+.tcat a:hover,
+.tcat a:active {
+    color: #000000;
+}
+.thead input.textbox,
+.thead select {
+    border: 1px solid #111;
+}
+.popup_menu .popup_item:hover {
+    background: #333;
+    color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #333;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #000;
+}
+[/code]
+
+
+Add Stylesheet to Dev:
+
+
+calm.css
+Attached to color setting Calm
+
+Add:
+
+[code]
+.main-menu__links__item--active {
+    background: #385947 !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #48715b !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #48715b;
+}
+#logo {
+    background: #385947 url(themes/dev/images/colors/calm_header.png) top left repeat-x;
+    border-bottom: 1px solid #263c30;
+}
+#header ul.menu li a {
+    color: #fff;
+}
+#panel input.button {
+    background: #385947 url(themes/dev/images/colors/calm_thead.png) top left repeat-x;
+}
+.thead {
+    background: #385947 url(themes/dev/images/colors/calm_thead.png) top left repeat-x;
+    color: #ffffff;
+    border-bottom: 1px solid #263c30;
+}
+.thead input.textbox,
+.thead select {
+    border: 1px solid #263c30;
+}
+.popup_menu .popup_item:hover {
+    background: #48715b;
+    color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #48715b;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: #48715b;
+    color: #fff;
+    border-color: #263c30;
+}
+[/code]
+
+
+Add Stylesheet to Dev:
+
+
+dawn.css
+Attached to color setting Dawn
+
+Add:
+
+[code]
+.main-menu__links__item--active {
+    background: #d56c2c !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #DA7736 !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #d56c2c;
+}
+#logo {
+    background: #d56c2c url(themes/dev/images/colors/dawn_header.png) top left repeat-x;
+    border-bottom: 1px solid #011929;
+}
+#header ul.menu li a {
+    color: #fff;
+}
+#panel input.button {
+    background: #d56c2c url(themes/dev/images/colors/dawn_thead.png) top left repeat-x;
+}
+.thead {
+    background: #d56c2c url(themes/dev/images/colors/dawn_thead.png) top left repeat-x;
+    border-bottom: 1px solid #9a4e20;
+}
+.thead input.textbox,
+.thead select {
+    border: 1px solid #9a4e20;
+}
+.popup_menu .popup_item:hover {
+    background: #f2a555;
+    color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #f2a555;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: #f2a555;
+    color: #fff;
+    border-color: #9a4e20;
+}
+[/code]
+
+
+
+Add Stylesheet to Dev:
+
+
+earth.css
+Attached to color setting Earth
+
+Add:
+
+[code]
+.main-menu__links__item--active {
+    background: #4a3a2e !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #6d5545 !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #6d5545;
+}
+#logo {
+    background: #4a3a2e url(themes/dev/images/colors/earth_header.png) top left repeat-x;
+    border-bottom: 1px solid #31261e;
+}
+#header ul.menu li a {
+    color: #fff;
+}
+#panel input.button {
+    background: #4a3b2f url(themes/dev/images/colors/earth_thead.png) top left repeat-x;
+}
+.thead {
+    background: #4a3b2f url(themes/dev/images/colors/earth_thead.png) top left repeat-x;
+    border-bottom: 1px solid #31261e;
+}
+.thead input.textbox,
+.thead select {
+    border: 1px solid #31261e;
+}
+.popup_menu .popup_item:hover {
+    background: #6d5545;
+    color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #6d5545;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: #6d5545;
+    color: #fff;
+    border-color: #31261e;
+}
+[/code]
+
+
+
+Add Stylesheet to Dev:
+
+
+flame.css
+Attached to color setting Flame
+
+Add:
+
+[code]
+.main-menu__links__item--active {
+    background: #750000 !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #a20000 !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #a20000;
+}
+#logo {
+    background: #750000 url(themes/dev/images/colors/flame_header.png) top left repeat-x;
+    border-bottom: 1px solid #550000;
+}
+#header ul.menu li a {
+    color: #fff;
+}
+#panel input.button {
+    background: #750000 url(themes/dev/images/colors/flame_thead.png) top left repeat-x;
+}
+.thead {
+    background: #750000 url(themes/dev/images/colors/flame_thead.png) top left repeat-x;
+    border-bottom: 1px solid #550000;
+}
+.thead input.textbox,
+.thead select {
+    border: 1px solid #550000;
+}
+.popup_menu .popup_item:hover {
+    background: #a20000;
+    color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #a20000;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: #a20000;
+    color: #fff;
+    border-color: #550000;
+}
+[/code]
+
+
+
+Add Stylesheet to Dev:
+
+
+leaf.css
+Attached to color setting Leaf
+
+Add:
+
+[code]
+.main-menu__links__item--active {
+    background: #386e21 !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #5aaf33 !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #5aaf33;
+}
+#logo {
+    background: #386e21 url(themes/dev/images/colors/leaf_header.png) top left repeat-x;
+    border-bottom: 1px solid #234615;
+}
+#header ul.menu li a {
+    color: #fff;
+}
+#panel input.button {
+    background: #386e21 url(themes/dev/images/colors/leaf_thead.png) top left repeat-x;
+}
+.thead {
+    background: #386e21 url(themes/dev/images/colors/leaf_thead.png) top left repeat-x;
+    border-bottom: 1px solid #234615;
+}
+.thead input.textbox,
+.thead select {
+    border: 1px solid #234615;
+}
+.popup_menu .popup_item:hover {
+    background: #5aaf33;
+    color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #5aaf33;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: #5aaf33;
+    color: #fff;
+    border-color: #234615;
+}
+[/code]
+
+
+
+Add Stylesheet to Dev:
+
+
+night.css
+Attached to color setting Night
+
+Add:
+
+[code]
+.main-menu__links__item--active {
+    background: #022338 !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #023a61 !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #023a61;
+}
+#logo {
+    background: #022338 url(themes/dev/images/colors/night_header.png) top left repeat-x;
+    border-bottom: 1px solid #011929;
+}
+#header ul.menu li a {
+    color: #fff;
+}
+#panel input.button {
+    background: #022338 url(themes/dev/images/colors/night_thead.png) top left repeat-x;
+}
+.thead {
+    background: #022338 url(themes/dev/images/colors/night_thead.png) top left repeat-x;
+    border-bottom: 1px solid #011929;
+}
+.thead input.textbox,
+.thead select {
+    border: 1px solid #011929;
+}
+.popup_menu .popup_item:hover {
+    background: #023a61;
+    color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #023a61;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: #023a61;
+    color: #fff;
+    border-color: #011929;
+}
+[/code]
+
+
+
+Add Stylesheet to Dev:
+
+
+sun.css
+Attached to color setting Sun
+
+Add:
+
+[code]
+.main-menu__links__item--active {
+    background: #ffdd4d !important;
+    color: #000 !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #555 !important;
+    color: #000 !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #555;
+}
+#logo {
+    background: #ffdd4d url(themes/dev/images/colors/sun_header.png) top left repeat-x;
+    border-bottom: 1px solid #111;
+}
+#header ul.menu li a {
+    color: #000;
+}
+#panel input.button {
+    background: #ffdd4d url(themes/dev/images/colors/sun_thead.png) top left repeat-x;
+    color: #000;
+}
+.thead {
+    background: #ffdd4d url(themes/dev/images/colors/sun_thead.png) top left repeat-x;
+    border-bottom: 1px solid #ffaf1a;
+    color: #000;
+}
+.thead a:link,
+.thead a:visited,
+.thead a:hover,
+.thead a:active {
+    color: #000;
+}
+.thead input.textbox,
+.thead select {
+    border: 1px solid #ffaf1a;
+}
+.popup_menu .popup_item:hover {
+    background: #ffea9c;
+    color: #000;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #ffea9c;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: #ffea9c;
+    color: #000;
+    border-color: #ffaf1a;
+}
+[/code]
+
+
+Add Stylesheet to Dev:
+
+
+twilight.css
+Attached to color setting Twilight
+
+Add:
+
+[code]
+.main-menu__links__item--active {
+    background: #273a46 !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #426276 !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #426276;
+}
+#logo {
+    background: #273a46 url(themes/dev/images/colors/twilight_header.png) top left repeat-x;
+    border-bottom: 1px solid #1d2b34;
+}
+#header ul.menu li a {
+    color: #fff;
+}
+#panel input.button {
+    background: #273a46 url(themes/dev/images/colors/twilight_thead.png) top left repeat-x;
+}
+.thead {
+    background: #273a46 url(themes/dev/images/colors/twilight_thead.png) top left repeat-x;
+    border-bottom: 1px solid #1d2b34;
+}
+.thead input.textbox,
+.thead select {
+    border: 1px solid #1d2b34;
+}
+.popup_menu .popup_item:hover {
+    background: #426276;
+    color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #426276;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: #426276;
+    color: #fff;
+    border-color: #1d2b34;
+}
+[/code]
+
+Add Stylesheet to Dev:
+
+
+water.css
+Attached to color setting Water
+
+Add:
+
+[code]
+.main-menu__links__item--active {
+    background: #1e6365 !important;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,
+.main-menu__links__item--active .main-menu__links__item__link:active {
+    background: #2d9595 !important;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #2d9595;
+}
+#logo {
+    background: #1e6365 url(themes/dev/images/colors/water_header.png) top left repeat-x;
+    border-bottom: 1px solid #133f41;
+}
+#header ul.menu li a {
+    color: #fff;
+}
+#panel input.button {
+    background: #1e6365 url(themes/dev/images/colors/water_thead.png) top left repeat-x;
+}
+.thead {
+    background: #1e6365 url(themes/dev/images/colors/water_thead.png) top left repeat-x;
+    border-bottom: 1px solid #133f41;
+}
+.thead input.textbox,
+.thead select {
+    border: 1px solid #133f41;
+}
+.popup_menu .popup_item:hover {
+    background: #2d9595;
+    color: #fff;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #2d9595;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: #2d9595;
+    color: #fff;
+    border-color: #133f41;
+}
+[/code]
