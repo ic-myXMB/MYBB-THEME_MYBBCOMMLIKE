@@ -1,0 +1,1148 @@
+[For 1.8] - [Tutorial] - Create a MyBBCOMLIKE theme
+
+Create a new theme...
+
+for example:
+
+Called "Dev"
+
+then create a template set for example called:
+
+"Dev Templates"
+
+and attach them to the newly created theme called for example "Dev"
+
+
+Then, in that new theme settings  edit the following paths:
+
+
+Image Directory:
+
+Change to:
+
+[code]
+themes/dev/images
+[/code]
+
+
+Board Logo:
+
+Change to:
+
+[code]
+themes/dev/images/logo-knockout.png
+[/code]
+
+then go into any remaining stylesheets in the new dev theme and change all instances of 
+[code]
+images/
+[/code]
+
+to:
+[code]
+themes/dev/images/
+[/code]
+
+as this will simply and correctly reflect the defined file path for your new development theme.
+
+
+Then, you would dowload the included attachment "Upload.zip" shared below (as such contains various needed files) and extract such and upload the contents to your forum root directory as the containing files inside are correctly place so you should be fine with factoring simply that just when you extract the like the mybb dist core package "upload" is = to forum root directory, hopefully that makes sense on the ease of simply downloading and extracting the attachment and then uploading correctly...
+
+
+in this new theme add a stylesheet (for example named: "main.css") attached globally. (note: that you can name it whatever you want, and main.css is just mentioned as an example)
+
+and select write your own content...
+
+then add the following:
+
+[code]
+body{
+  text-align: unset;
+}
+.thead{
+  color:#fff;
+  background:#007fd0;
+  border:none;
+  font-size:1.1em;
+  padding:8px 12px;
+}
+.tcat{
+  color:#fff;
+  font-size:12px;
+  background:#444;
+  padding:8px 12px;
+  border:none;
+}
+.forumbit-count{
+  margin: 0;
+  font-size: 12px;
+}
+#container{
+     min-width:unset;
+}
+.wrapper{
+     width:unset;
+     min-width:unset;
+}
+#content{
+    width:unset !important;
+}
+.modal{
+    width:300px;
+}
+.hidden{
+    display:none !important;
+    visibility:hidden;
+}
+.visually-hidden{
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px;
+}
+.nowrap{
+    white-space:nowrap;
+}
+.logo{
+    display:block;
+    text-decoration:none;
+}
+.logo__icon>img{
+    height:44px;
+    width:48px;
+    display:inline-block;
+    vertical-align:middle
+}
+.logo__text{
+    font-family:"Asap",sans-serif;
+    font-style:italic;
+    color:#D9DADB;
+    text-indent:5px;
+}
+.logo:hover{
+    text-decoration:none;
+}
+.logo--light .logo__icon>svg *{
+    fill:#fff;
+}
+.logo--light:hover .logo__icon>svg *{
+    fill:#ccc;
+}
+.logo--primary .logo__icon>svg *{
+    fill:#007fd0;
+}
+.logo--primary:hover .logo__icon>svg *{
+    fill:#ff7500;
+}
+.header{
+    background:#393D3F;
+}
+@media only screen and (min-width: 768px){
+    .header{
+        display:flex;
+        flex-direction:row;
+        height:75px;
+    }
+}
+.header__title{
+    height:100%;
+    margin:0;
+}
+@media only screen and (min-width: 768px){
+    .header__title{
+        float:left;
+    }
+}
+.header__title .logo{
+    height:75px;
+    align-items:center;
+    display:flex;
+}
+@media only screen and (min-width: 768px){
+    .header__title .logo{
+        height:100%;
+    }
+}
+.header .wrapper{
+    position:relative;
+}
+.header .menu-button,.header .menu-close-button{
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    padding:24px 15px;
+    cursor:pointer;
+}
+.header .menu-button .icon svg,.header .menu-close-button .icon svg{
+    width:30px;
+    height:30px;
+    vertical-align:middle;
+    margin-top:-2px;
+    margin-left:0;
+    margin-right:0;
+}
+.header .menu-button .icon svg *,.header .menu-close-button .icon svg *{
+    fill:#fff !important;
+}
+.header .menu-button--hide,.header .menu-close-button--hide{
+    display:none;
+}
+@media only screen and (min-width: 768px){
+    .header .menu-button,.header .menu-close-button{
+        display:none;
+    }
+}
+.header__checkbox{
+    display:none;
+}
+.main-menu{
+    height:100%;
+}
+@media only screen and (max-width: 767px){
+    .main-menu{
+        display:none;
+    }
+}
+.main-menu__links{
+    height:100%;
+    list-style:none;
+    margin:0;
+    padding:0;
+    font-size:0;
+    display:flex;
+}
+@media only screen and (max-width: 767px){
+    .main-menu__links{
+        flex-wrap:wrap;
+        background:#444;
+        margin:0 -6%;
+        border-bottom:1px solid #666;
+    }
+}
+.main-menu__links__gap{
+    flex-grow:2;
+}
+@media only screen and (max-width: 767px){
+    .main-menu__links__gap{
+        display:none;
+    }
+}
+.main-menu__links__item{
+    flex-grow:1;
+}
+@media only screen and (max-width: 767px){
+    .main-menu__links__item{
+        width:100%;
+        box-sizing:border-box;
+        text-align:left;
+        border-top:1px solid #666;
+    }
+}
+.main-menu__links__item__link{
+    display:block;
+    margin:0;
+    font-size:1.8rem;
+    height:100%;
+    font-weight:300;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:background .25s ease;
+}
+@media only screen and (max-width: 767px){
+    .main-menu__links__item__link{
+        text-align:left;
+        padding:8px 20px;
+        font-size:1.6rem;
+        justify-content:flex-start;
+    }
+}
+.main-menu__links__item__link:link,.main-menu__links__item__link:visited{
+    color:#fff;
+    text-decoration:none;
+}
+.main-menu__links__item__link:hover,.main-menu__links__item__link:active{
+    background:rgba(85,85,85,0.6);
+}
+.main-menu__links__item--search{
+    flex-grow:0;
+    padding:0 0 0 20px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+@media only screen and (max-width: 767px){
+    .main-menu__links__item--search{
+        display:none;
+    }
+}
+.main-menu__links__item--search__icon .icon svg{
+    width:20px;
+    height:20px;
+    vertical-align:middle;
+    margin-top:-2px;
+    margin-left:0;
+    margin-right:0;
+}
+.main-menu__links__item--search__icon .icon svg *{
+    fill:#999 !important;
+}
+.main-menu__links__item--search__icon:hover,.main-menu__links__item--search__icon:active{
+    cursor:pointer;
+}
+.main-menu__links__item--search__icon:hover .icon svg *,.main-menu__links__item--search__icon:active .icon svg *{
+    fill:#ccc !important;
+}
+.main-menu__links__item--active{
+    background:#007fd0;
+    color:#fff;
+}
+.main-menu__links__item--active .main-menu__links__item__link{
+    color:inherit;
+}
+.main-menu__links__item--active .main-menu__links__item__link:hover,.main-menu__links__item--active .main-menu__links__item__link:active{
+    background:#007fd0;
+}
+.site-search{
+    background:#393D3F;
+    display:none;
+}
+@media only screen and (min-width: 768px){
+    .site-search{
+        display:block;
+        text-align:right;
+        padding:15px 0 14px 0;
+        position:absolute;
+        top:0;
+        right:0;
+        width:77%;
+        will-change:transform;
+        transition:transform .25s linear,opacity .25s linear;
+        transform:translateY(-100%);
+        opacity:0;
+    }
+    .site-search input[type="text"].site-search__field{
+        margin:1px 5px 1px 0;
+        width:250px;
+        padding:7px 7px 8px 7px;
+        border-color:#fff;
+    }
+    .site-search__button--cancel.button{
+        margin-right:0;
+        display:inline-block;
+    }
+}
+@media only screen and (max-width: 767px){
+    .site-search{
+        margin:10px -10px 0 -10px;
+    }
+    .site-search input[type="text"].site-search__field{
+        width:63%;
+        display:inline-block;
+        padding:7px 7px 8px 7px;
+        margin:0 0 10px 0;
+        border-color:#fff;
+        box-sizing:border-box;
+        float:left;
+    }
+    .site-search__button--search.site-button{
+        width:35%;
+        margin:0 0 10px 0;
+        box-sizing:border-box;
+        float:right;
+    }
+    .site-search__button--cancel.site-button{
+        display:none;
+    }
+}
+@media only screen and (min-width: 768px){
+    #show-site-search:checked ~ .site-search{
+        opacity:1;
+        transform:translateY(0%);
+    }
+}
+@media only screen and (max-width: 767px){
+    #show-mobile-menu:checked ~ .main-menu{
+        display:block;
+    }
+}
+@media only screen and (max-width: 767px){
+    #show-mobile-menu:checked ~ .site-search{
+        display:block;
+    }
+}
+.js .header{
+    position:fixed;
+    z-index:10;
+    right:0;
+    left:0;
+    top:0;
+}
+.headroom{
+    will-change:transform;
+    transition:transform 200ms linear;
+}
+.headroom--pinned{
+    transform:translateY(0%);
+}
+.headroom--unpinned{
+    transform:translateY(-100%);
+}
+.headroom--unpinned.headroom--disabled{
+    transform:translateY(0%);
+}
+html,button,input,select,textarea{
+    color:#222;
+    word-wrap:break-word;
+}
+::selection{
+    background:#ff7500;
+    color:#fff;
+    text-shadow:none;
+}
+html{
+    font-size:10px;
+}
+body{
+    margin:0;
+    font:16px/26px "Open Sans",sans-serif;
+    background:#fff;
+}
+input,select,textarea,button{
+    font:16px "Open Sans",sans-serif;
+}
+a:link,a:visited{
+    color:#007fd0;
+    text-decoration:none;
+}
+a:hover,a:active{
+    color:#ff7500;
+    text-decoration:underline;
+}
+a:focus,button:focus{
+    outline:0;
+}
+img{
+    vertical-align:middle;
+}
+fieldset{
+    border:0;
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    width:88%;
+    margin:0 6%;
+    box-sizing:border-box;
+}
+.wrapper:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+@media only screen and (min-width: 1140px){
+    .wrapper{
+        max-width:1250px;
+        margin:0 auto;
+    }
+}
+.form{
+    border:1px solid #dfdfdf;
+    margin-bottom:40px;
+    border-radius:4px;
+}
+.form .buttons{
+    margin:-5px;
+}
+.form__submit{
+    border-radius:0 0 4px 4px;
+    background:#f7f7f7;
+    text-align:center;
+    padding:10px 0;
+}
+.textbox{
+    border:1px solid #ccc;
+    padding:5px 6px;
+    width:100%;
+    font-size:16px;
+    outline:0;
+    border-radius:4px;
+    box-sizing:border-box;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+.site-button{
+    background: unset;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    margin:5px;
+    padding:4px 10px;
+    font-size:0.9em;
+    line-height:26px;
+    border:1px solid;
+    border-radius:4px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+.site-button:hover{
+    text-decoration:none;
+    outline:none;
+    cursor:pointer;
+}
+.site-button .icon svg{
+    width:16px;
+    height:16px;
+    vertical-align:middle;
+    margin-top:-2px;
+    margin-left:0;
+    margin-right:8px;
+}
+.site-button .icon svg *{
+    fill:#fff !important;
+}
+.site-button,.site-button:link,.site-button:visited{
+    color:#fff;
+    background-color:#007fd0;
+    border-color:#007fd0;
+}
+.site-button .icon svg *,.site-button:link .icon svg *,.site-button:visited .icon svg *{
+    fill:#fff !important;
+}
+.site-button:hover{
+    color:#fff;
+    background-color:#ff7500;
+    border-color:#ff7500;
+}
+.site-button:hover .icon svg *{
+    fill:#fff !important;
+}
+#forum {
+    font-family:"Open Sans", sans-serif;
+    font-size:14px;
+    line-height:1.5;
+}
+#forum #panel .upper{
+    background:#e1e1e1;
+    border:none;
+    color:#777;
+    padding:0;
+}
+#forum #panel .upper .wrapper{
+    padding-top:90px;
+    padding-bottom:12px;
+}
+#forum #panel .lower {
+    background:#f2f2f2;
+    border:none;
+    padding:0;
+}
+#forum #panel .lower .wrapper{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#forum #panel a:link,
+#forum #panel a:visited{
+    color:#555;
+    text-decoration:none;
+}
+#forum #panel a:hover,
+#forum #panel a:active{
+    color:#ff7500;
+    text-decoration:underline;
+}
+#forumMenu ul.top_links{
+    float:right;
+    font-weight:bold;
+    text-align:right;
+    margin:0 5px 0 0;
+}
+#forumMenu ul.top_links a.search{
+    background-position:0 0;
+}
+#forumMenu ul.top_links a.memberlist{
+    background-position:0 -20px;
+}
+#forumMenu ul.top_links a.calendar{
+    background-position:0 -40px;
+}
+#forumMenu ul.top_links a.help{
+    background-position:0 -60px;
+}
+#forum #footer .upper{
+    border-radius:5px;
+    border:1px solid #bbb;
+    width:88%;
+    margin:auto auto;
+    margin-top:8px;
+}
+#footer .upper ul.bottom_links{
+    margin: 4px 0 0 -6%;
+}
+[/code]
+
+
+Now, there are only a few template edits next:
+
+
+Edit Template: headerinclude
+
+Find:
+[code]
+{$stylesheets}
+[/code]
+
+Add this after:
+
+[code]
+<!-- Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Add Favicon -->
+<link rel="Shortcut icon" href="{$theme['imgdir']}/favicon.ico" />
+
+<!-- Fonts -->
+<link href="{$mybb->asset_url}/themes/dev/inc/css/opensans.css?family=Asap:400,600,600i|Open+Sans:300,400,700" rel="stylesheet">
+
+<!-- Progress Bar -->
+<link type="text/css" rel="stylesheet" href="{$mybb->asset_url}/themes/dev/progressbar/nprogress.css">
+<script type="text/javascript" src="{$mybb->asset_url}/themes/dev/progressbar/nprogress.js"></script>
+<script>
+	NProgress.configure({ showSpinner: false });
+		$(document).ready(function() {
+			NProgress.start();
+			NProgress.done();
+		});
+</script>
+
+<!-- Main-menu item --active -->
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".main-menu__links__item__link").each(function () {
+           if (location.href.indexOf(this.href) > -1)
+           {
+                $(this).parent().attr("class", "main-menu__links__item main-menu__links__item--active");
+                return false;
+           }
+     });
+});
+</script>
+[/code]
+
+Edit Template: footer
+
+Find:
+
+[code]
+{$auto_dst_detection}
+</div>
+[/code]
+
+Add this after:
+
+[code]
+<!-- Add Headroom -->
+<script type="text/javascript" src="themes/dev/inc/jscripts/headroom.min.js"></script>
+<script type="text/javascript">
+	$('html').addClass('js');
+	// Headroom
+	var myElement = document.querySelector("header");
+	// construct an instance of Headroom, passing the element
+	var headroom  = new Headroom(myElement);
+	// initialise
+	headroom.init();
+</script>
+[/code]
+
+
+
+Edit Template: header
+
+Replace with:
+
+[code]
+<div id="container">
+	<a name="top" id="top"></a>
+    <header class="header headroom headroom--top headroom--not-bottom">
+        <div class="wrapper">
+            <h1 class="header__title">
+                <a href="{$mybb->settings['bburl']}/index.php" class="logo logo--light  header__title__logo">
+    <span class="logo__icon"><img src="{$theme['logo']}" title="{$mybb->settings['bbname']}" /></span>
+        <span class="logo__text">{$mybb->settings['bbname']}</span>
+				</a>
+            </h1>
+            <label class="menu-button" for="show-mobile-menu"><span class="icon"><span class="icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></span>
+</span></label>
+            <label class="menu-close-button menu-close-button--hide" for="show-mobile-menu"><span class="icon"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span>
+</span></label>
+            <input type="checkbox" class="header__checkbox" id="show-mobile-menu">
+            <input type="checkbox" class="header__checkbox" id="show-site-search">
+            <nav class="main-menu">
+                <ul class="main-menu__links">
+                    <li class="main-menu__links__gap">&nbsp;</li>
+                    <li class="main-menu__links__item main-menu__links__item--home">
+                        <a href="{$mybb->settings['homeurl']}" class="main-menu__links__item__link">{$mybb->settings['homename']}</a>
+                    </li>
+                    <li class="main-menu__links__item main-menu__links__item--portal">
+                        <a href="{$mybb->settings['bburl']}/portal.php" class="main-menu__links__item__link">{$lang->toplinks_portal}</a>
+                    </li>
+                    <li class="main-menu__links__item main-menu__links__item--community">
+                        <a href="{$mybb->settings['bburl']}/index.php" class="main-menu__links__item__link">{$mybb->settings['bbname']}</a>
+                    </li>
+                    <li class="main-menu__links__item main-menu__links__item--statistics">
+                        <a href="{$mybb->settings['bburl']}/stats.php" class="main-menu__links__item__link">Stats</a>
+                    </li>
+                    <li class="main-menu__links__item main-menu__links__item--showteam">
+                        <a href="{$mybb->settings['bburl']}/showteam.php" class="main-menu__links__item__link">{$lang->bottomlinks_forumteam}</a>
+                    </li>
+                    <li class="main-menu__links__item main-menu__links__item--blog">
+                        <a href="{$mybb->settings['bburl']}/blog" class="main-menu__links__item__link">Blog</a>
+                    </li>
+                    <li class="main-menu__links__item main-menu__links__item--search">
+                        <label class="main-menu__links__item__icon main-menu__links__item--search__icon" for="show-site-search"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license Copyright 2022 Fonticons, Inc. --><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg></span>
+</label>
+                    </li>
+                </ul>
+            </nav>
+            <div class="site-search">
+              {$quicksearch}
+            </div>
+        </div>
+    </header>	
+<div id="forum">
+      <div id="header">
+			<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+					<nav id="forumMenu"><ul class="menu top_links">
+						{$menu_search}
+						{$menu_memberlist}
+						{$menu_calendar}
+						<li><a href="{$mybb->settings['bburl']}/misc.php?action=help" class="help">{$lang->toplinks_help}</a></li>
+					</ul></nav>
+						{$welcomeblock}
+					<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+				<!-- </div> in header_welcomeblock_member and header_welcomeblock_guest -->
+		              </div>
+		         </div>
+		        <div id="content">
+ 			<div id="main" role="main">
+			<div class="wrapper">
+				{$pm_notice}
+				{$remote_avatar_notice}
+				{$bannedwarning}
+				{$bbclosedwarning}
+				{$modnotice}
+				{$pending_joinrequests}
+				{$awaitingusers}
+				<navigation>
+				<br />
+[/code]
+
+
+Edit Template: header_quicksearch
+
+Replace all with:
+
+[code]
+				<form action="{$mybb->settings['bburl']}/search.php">
+					<input type="hidden" name="action" value="do_search" />
+					<input type="hidden" name="postthread" value="1" />
+					<label for="qWidget">
+						<input value="" id="qWidget" name="keywords" maxlength="255" type="text"  class="site-search__field textbox" placeholder="{$lang->search_button}" class="site-search__field" />
+					</label>
+                    <button class="site-button site-search__button site-search__button--search" id="submit" type="submit"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license Copyright 2022 Fonticons, Inc. --><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg></span>
+ {$lang->search_button}</button>
+                    <label class="site-button button--dark site-search__button site-search__button--cancel" for="show-site-search"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></span>
+Cancel</label>
+				</form>
+[/code]
+
+Edit Template: header_welcomeblock_member
+
+Find and remove:
+[code]
+    <br class="clear" />
+[/code]
+
+Now that covered adding the header and also added the correct thead and tcat styling, but, as you notice the mybbcom forum has tcat removed on forumbit and forumdisplay subforums as well as it combines the posts and threads count on such into one td, so as such, let us do that presently...
+
+
+Edit Template: forumbit_depth1_cat
+
+Find and remove:
+[code]
+<tr>
+<td class="tcat" colspan="2"><span class="smalltext"><strong>{$lang->forumbit_forum}</strong></span></td>
+<td class="tcat" width="85" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_threads}</strong></span></td>
+<td class="tcat" width="85" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_posts}</strong></span></td>
+<td class="tcat" width="200" align="center"><span class="smalltext"><strong>{$lang->forumbit_lastpost}</strong></span></td>
+</tr>
+[/code]
+
+Edit Template: forumbit_depth2_forum
+
+Find:
+[code]
+<td class="{$bgcolor}" align="center" style="white-space: nowrap">{$threads}{$unapproved['unapproved_threads']}</td>
+<td class="{$bgcolor}" align="center" style="white-space: nowrap">{$posts}{$unapproved['unapproved_posts']}</td>
+[/code]
+
+Replace with:
+[code]
+<td class="{$bgcolor}" align="center" style="white-space: nowrap" width="100">
+    <p class="forumbit-count">
+        <span class="value">{$threads}{$unapproved['unapproved_threads']}</span>
+        <span class="title">{$lang->forumbit_posts}</span>
+    </p>
+    <p class="forumbit-count">
+        <span class="value">{$posts}{$unapproved['unapproved_posts']}</span>
+        <span class="title">{$lang->forumbit_threads}</span>
+    </p>
+    </td>
+[/code]
+
+Then below it find:
+[code]
+<td class="{$bgcolor}" align="right" style="white-space: nowrap">{$lastpost}</td>
+[/code]
+
+Change to:
+[code]
+<td class="{$bgcolor}" align="right" style="white-space: nowrap" width="200">{$lastpost}</td>
+[/code]
+
+
+Edit Template: forumdisplay_subforums
+
+Find and remove:
+[code]
+<tr>
+<td class="tcat" width="2%">&nbsp;</td>
+<td class="tcat" width="59%"><span class="smalltext"><strong>{$lang->forumbit_forum}</strong></span></td>
+<td class="tcat" width="7%" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_threads}</strong></span></td>
+<td class="tcat" width="7%" align="center" style="white-space: nowrap"><span class="smalltext"><strong>{$lang->forumbit_posts}</strong></span></td>
+<td class="tcat" width="15%" align="center"><span class="smalltext"><strong>{$lang->forumbit_lastpost}</strong></span></td>
+</tr>
+[/code]
+
+Now, this simply is a starting point and by no means a finished project or what not and simply gets you started by adding a progress bar to a top menu, adds a top menu, some fonts, headroom.js, gets the forumbit taken care of for tcat removal and also the combining of posts / threads count and simply gets you started on something you can continue to expand upon simply provided if at all found helpful. Best of luck!
+
+
+Now, if your desire is to also add the footer...
+
+Edit Template: footer
+
+Find:
+[code]
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE -->{$task_image}<!-- End task image code -->
+{$auto_dst_detection}
+[/code]
+
+Add this before it:
+[code]
+</div>
+</div></div>
+<footer class="footer">
+        <div class="wrapper">
+            <nav class="footer__nav footer__nav--internal">
+                <ul class="footer__nav__links">
+                    <li class="footer__nav__links__item">
+                        <a href="#" class="footer__nav__links__item__link">YourProject</a>
+                    </li>
+                    <li class="footer__nav__links__item">
+                        <a href="#" class="footer__nav__links__item__link">Get Involved</a>
+                    </li>
+                    <li class="footer__nav__links__item">
+                        <a href="#" class="footer__nav__links__item__link">Support</a>
+                    </li>
+                    <li class="footer__nav__links__item">
+                        <a href="contact.php" class="footer__nav__links__item__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer__nav footer__nav--social">
+                <ul class="footer__nav__links">
+                    <li class="footer__nav__links__item" style="<!-- display: none; -->">
+                        <a href="https://github.com/yourproject" class="footer__nav__links__item__link"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+ yourproject</a>
+                    </li>
+                    <li class="footer__nav__links__item" style="<!-- display: none; -->">
+                        <a href="https://facebook.com/yourproject" class="footer__nav__links__item__link"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></span>
+ yourproject</a>
+                    </li>
+                    <li class="footer__nav__links__item" style="<!-- display: none; -->">
+                        <a href="https://twitter.com/you" class="footer__nav__links__item__link"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></span>
+ @yourproject</a>
+                    </li>
+                    <li class="footer__nav__links__item" style="display: none;">
+                        <a href="https://twitter.com/yoursecurity" class="footer__nav__links__item__link"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></span>
+ @yoursecurity</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <div class="copyright">
+        Copyright &copy; 2022 YourProject
+    </div>
+[/code]
+
+Now, return to the new theme you created, visit theme settings and edit the new stylesheet (for example named: "main.css") that you previously created and attached globally. 
+
+add this after the existing content you already added...
+
+add the following after:
+[code]
+.footer {
+    background: #393D3F;
+    font: 16px/26px "Open Sans", sans-serif;
+}
+.footer .wrapper{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-direction: row;
+}
+.footer__nav{
+    flex-grow: 1;
+}
+.footer__nav__links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer__nav__links__item{
+    font-size: 0.8em;
+    padding: 0;
+    display: inline-block;
+}
+@media only screen and (min-width:1140px){
+    .footer__nav__links__item{
+        font-size: 0.8em;
+    }
+}
+.footer__nav__links__item__link{
+    display: block;
+    transition: background 0.25s ease, color 0.25s ease;
+    padding: 14px 6px;
+}
+@media only screen and (min-width:1140px){
+    .footer__nav__links__item__link{
+        padding: 18px 12px;
+    }
+}
+.footer__nav__links__item__link:link,
+.footer__nav__links__item__link:visited,
+.footer__nav__links__item__link:hover,
+.footer__nav__links__item__link:active{
+    color: #ccc;
+    text-decoration: none;
+}
+.footer__nav__links__item__link:hover,
+.footer__nav__links__item__link:active{
+    color: #fff;
+    background: rgba(85, 85, 85, 0.6);
+}
+.footer__nav__links__item__link .icon svg{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 2px;
+}
+.footer__nav__links__item__link .icon svg *{
+    fill: #999 !important;
+}
+.footer__nav--internal{
+    text-transform: uppercase;
+}
+.footer__nav--social{
+    text-align: right;
+}
+.copyright{
+    display: none;
+    background: #444;
+    font-size: 0.75em;
+    color: #999;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+[/code]
+
+Now, we need to remove a few items if we are emulating the existing mybbcom theme so we must go back and edit the footer template.
+
+Edit template: footer
+
+Find and delete:
+[code]
+                <li><a href="{$mybb->settings['homeurl']}">{$mybb->settings['homename']}</a></li>
+[/code]
+* as you will note, this menu item is missing on the mybbcom theme
+
+Find and delete:
+[code]
+{$contact_us}
+[/code]
+* as you will note, this menu item is missing on the mybbcom theme
+
+Find and delete:
+[code]
+             {$lang_select}
+             {$theme_select} 
+[/code]
+* as you note, these items are missing on the mybbcom theme, but that is primarily due to not having other themes present and or any other language packs installed and available, so we can remove this if we are trying to keep the feel, else **
+
+** or if you opt to keep the lang and theme selectors you should move them 
+
+From:
+[code]
+    <div class="upper"> 
+        <div class="wrapper">     
+             {$lang_select}
+             {$theme_select}   
+[/code]         
+
+To:
+[code]
+    <div class="upper"> 
+             {$lang_select}
+             {$theme_select}            
+        <div class="wrapper">  
+[/code] 
+
+
+One last thing to note, is let us consider the manners and add a creation credit(s) if one so chooses, such would be nice:
+
+To do so:
+
+Edit template: footer
+
+Find:
+[code]
+                <!-- End powered by -->
+            </span>
+[/code
+
+Add the following after:
+[code]
+               <br />
+                <!-- Theme Credits -->
+                Theme by: <a href="https://community.mybb.com/user-1830.html" target="_blank">Justin S.</a>
+                &amp; <a href="https://community.mybb.com/user-145198.html" target="_blank">ic_myXMB</a>
+[/code]
+* you can then choose to add your credit link after those, just added, as you further complete this tutorial and eventual project from such. ;)
+
+Now, this simply is a starting point and by no means a finished project or what not and simply gets you started by adding a progress bar to a top menu, adds a top menu, some fonts, headroom.js, as well as the footer and simply gets you started on something you can continue to expand upon simply provided if at all found helpful. Best of luck!
+
+
+Now, if your desire is to also add the notices and social links on index page...
+
+
+Edit Template: index
+
+Find:
+[code]
+{$forums}
+[/code]
+
+Add this before it:
+[code]
+<!-- News -->                   
+<div class="blog_updates release"><strong>Latest YourProject Release:</strong> <a href="#">YourProject Released — Some really cool release!</a> <span class="date">(May 19, 2022)</span></div>
+<div class="blog_updates latest"><strong>Latest news from the YourProject Blog:</strong> <a href="#">Some really cool blog news!</a> <span class="date">(May 19, 2022)</span></div>
+<!-- Social -->
+  <div class="social"><span class="intro">Stay on top of what's happening with YourProject</span>
+    <span class="twitter"><a href="http://twitter.com/yourproject">Follow @YourProject on Twitter</a></span>
+    <span class="twitter"><a href="http://twitter.com/yourprojectsecurity">@YourProjectSecurity</a></span>
+    <span class="facebook" style="display: none;"><a href="http://facebook.com/yourproject">Like YourProject on Facebook</a></span>
+    <span class="youtube" style="display: none;"><a href="https://www.youtube.com/c/yourproject">Subscribe on YouTube</a></span>
+    <span class="discord"><a href="https://discord.gg/yourproject">Join us on Discord</a></span>
+  </div>    
+[/code]
+
+ Now, return to the new theme you created, visit theme settings and edit the new stylesheet (for example named: "main.css") that you previously created and attached globally. 
+
+add this after the existing content you already added...
+
+[code]
+.blog_updates{
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 10px 0 0;
+}
+.blog_updates strong{
+    margin-right: 6px;
+}
+.blog_updates .date{
+    color: #666;
+    font-size: 0.8em;
+    margin-left: 6px;
+}
+.blog_updates.release{
+    background-color: #fff6bf;
+    border-color: #ffd324;
+}
+.blog_updates.latest{
+    background-color: #D6ECA6;
+    border-color: #8DC93E;
+}
+.blog_updates.important{
+    background-color: #FFEAEA;
+    border-color: #e06666;
+}
+.social{
+    padding: 12px;
+    text-align: center;
+}
+.social .intro{
+    color: #666;
+    margin-right: 16px;
+}
+.social .twitter,
+.social .facebook,
+.social .youtube,
+.social .discord{
+    margin: 0 16px 0 0;
+    border-left: 1px solid #ddd;
+    padding: 0 0 0 16px;
+}
+.social .twitter a,
+.social .facebook a,
+.social .youtube a,
+.social .discord a{
+    padding-left: 25px;
+}
+.social .twitter a{
+    background: url('themes/dev/images/twitter.png') left center no-repeat;
+}
+.social .facebook a{
+    background: url('themes/dev/images/facebook.png') left center no-repeat;
+}
+.social .youtube a{
+    background: url('themes/dev/images/youtube.png') left center no-repeat;
+}
+.social .discord a{
+    background: url('themes/dev/images/discord.png') left center no-repeat;
+}
+[/code]
+
+Now, this simply is a starting point and by no means a finished project or what not and simply gets you started by adding a progress bar to a top menu, adds a top menu, some fonts, headroom.js, the footer, as well as the notices and social links and simply gets you started on something you can continue to expand upon simply provided if at all found helpful. Best of luck! 
