@@ -1,5 +1,10 @@
 [For 1.8] - [Tutorial] - Create a MyBBCOMLIKE theme
 
+* Tutorial credits: ic_myXMB 
+* Further credits to: Justin S.  (as viewing their sources helped write the tutorial)
+* Further credits to: Vintagedaddyo (as viewing their sources helped write the tutorial)
+* The tutorial is free to share as long as you retain and mentioned credits
+
 Create a new theme...
 
 for example:
