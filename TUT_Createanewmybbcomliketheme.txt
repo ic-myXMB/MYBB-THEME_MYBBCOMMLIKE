@@ -3,7 +3,7 @@
 * Tutorial credits: ic_myXMB 
 * Further credits to: Justin S.  (as viewing their sources helped write the tutorial)
 * Further credits to: Vintagedaddyo (as viewing their sources helped write the tutorial)
-* The tutorial is free to share as long as you retain and mentioned credits
+* The tutorial is free to re-share as long as you retain any mentioned credits
 
 Create a new theme...
 
