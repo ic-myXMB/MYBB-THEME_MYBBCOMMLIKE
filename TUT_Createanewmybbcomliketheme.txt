@@ -1050,9 +1050,11 @@ Add the following after:
 [code]
                <br />
                 <!-- Theme Credits -->
-                Theme by: <a href="https://community.mybb.com/user-1830.html" target="_blank">Justin S.</a>
-                &amp; <a href="https://community.mybb.com/user-145198.html" target="_blank">ic_myXMB</a>
+				Theme by: <a href="https://community.mybb.com/user-1830.html" target="_blank">Justin S.</a>, 
+			    <a href="https://github.com/vintagedaddyo" target="_blank">Vintagedaddyo</a>
+				&amp; <a href="https://github.com/ic-myxmb" target="_blank">ic_myXMB</a>
 [/code]
+
 * you can then choose to add your credit link after those, just added, as you further complete this tutorial and eventual project from such. ;)
 
 Now, this simply is a starting point and by no means a finished project or what not and simply gets you started by adding a progress bar to a top menu, adds a top menu, some fonts, headroom.js, as well as the footer and simply gets you started on something you can continue to expand upon simply provided if at all found helpful. Best of luck!
