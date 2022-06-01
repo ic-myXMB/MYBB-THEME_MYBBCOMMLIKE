@@ -4,7 +4,9 @@
 This theme started simply as a written tutorial provided for users via a community post describing step by step on how to create such.
 
 
-If you desire is to see the tutorial steps to create this theme from start to finish:
+If your desire is to see just the tutorial steps done to create this theme from start to finish:
+
+View:
 
 https://github.com/ic-myXMB/MYBB-THEME_MYBBCOMMLIKE/blob/main/TUT_Createanewmybbcomliketheme.txt
 
