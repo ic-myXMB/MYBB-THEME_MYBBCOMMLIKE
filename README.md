@@ -68,35 +68,35 @@ In user & groups: specific usergroup find: Group Image
 Add for example:
 
 For administrator:
-
+[code]
 <i>administrator</i>
-
+[/code]
 
 For super moderator:
-
+[code]
 <i>super moderator</i>
-
+[/code]
 
 For moderator:
-
+[code]
 <i>moderator</i>
-
+[/code]
 
 For registerred:
 
-
+[code]
 <i>registered</i>
-
+[/code]
 
 For guest:
-
+[code]
 <i>guest</i>
-
+[/code]
 
 For banned:
-
+[code]
 <i>banned</i>
-
+[/code]
 
 
 To use the other additional usergroups styling included you will need to Add additional usergroups 8 through 16 as follows:
