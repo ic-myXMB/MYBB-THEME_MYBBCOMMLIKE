@@ -1781,3 +1781,290 @@ a:active {
     border-color: #133f41;
 }
 [/code]
+
+
+Now, this simply is a starting point and by no means a finished project or what not and simply gets you started by adding a progress bar to a top menu, adds a top menu, some fonts, headroom.js, the footer, as well as the notices and social links as well as now adding the additional color stylesheets and simply gets you started on something you can continue to expand upon simply provided if at all found helpful. Best of luck! 
+
+
+
+Then, if so desired one could then add MyBB Team Like styled groupimages
+
+
+Add Stylesheet to Dev:
+
+
+groupimages.css
+
+Attached to all pages...
+
+Add:
+
+[code]
+/* general styling of all team group */
+
+div[class^=team_usergroup_] {
+  display: inline-block;
+  margin: 6px 2px;
+  padding: 0 8px;
+  border: solid 1px #AAA;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #767676;
+  text-transform: uppercase;
+}
+
+div[class^=team_usergroup_] i {
+  font-style: normal;
+}
+
+/* default */
+
+/* individual styling of team group for user group 4 Administrator */
+
+div.team_usergroup_4 {
+  color: #FFF;
+  background-color: #008000;
+  border-color: #008000;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 3 Super Moderator */
+
+div.team_usergroup_3 {
+  color: #FFF;
+  background-color: #CC00CC;
+  border-color: #CC00CC;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 6 Moderator */
+
+div.team_usergroup_6 {
+  color: #FFF;
+  background-color: #CC00CC;
+  border-color: #CC00CC;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 2 Registered */
+
+div.team_usergroup_2 {
+  color: #FFF;
+  background-color: #0072BF;
+  border-color: #0072BF;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 1 Guest */
+
+div.team_usergroup_1 {
+  background: none;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 7 Banned */
+
+div.team_usergroup_7 {
+  background: none;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 5 Awaiting Activation */
+
+div.team_usergroup_5 {
+  background: none;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* Additional groups */
+
+/* individual styling of team group for user group 8 Management */
+
+div.team_usergroup_8 {
+  color: #008a00;
+  border-color: #008a00;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+
+/* individual styling of team group for user group 9 Development */
+
+div.team_usergroup_9 {
+  color: #d23b67;
+  border-color: #d23b67;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 10 Design */
+
+div.team_usergroup_10 {
+  color: #657d08;
+  border-color: #657d08;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 11 Security */
+
+div.team_usergroup_11 {
+  color: #927878;
+  border-color: #927878;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 12 DevOps */
+
+div.team_usergroup_12 {
+  color: #8967de;
+  border-color: #8967de;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 13 Support */
+
+div.team_usergroup_13 {
+  color: #f35858;
+  border-color: #f35858;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 14 Community */
+
+div.team_usergroup_14 {
+  color: #2bb7c7;
+  border-color: #2bb7c7;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 15 Web */
+
+div.team_usergroup_15 {
+  color: #2ba4eb;
+  border-color: #2ba4eb;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 16 Editorial */
+
+div.team_usergroup_16 {
+  color: #62c9a1;
+  border-color: #62c9a1;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+[/code]
+
+
+Edit Template:  postbit_groupimage 
+
+Replace with:
+[code]
+<div class="team_usergroup_{$usergroup['gid']}" title="{$usergroup['title']}">{$usergroup['image']}</div>
+[/code]
+
+Edit Template:  memberlist_user_groupimage 
+
+Replace with:
+[code]
+<div class="team_usergroup_{$usergroup['gid']}" title="{$usergroup['title']}">{$usergroup['image']}</div>
+[/code]
+
+Edit Template:  member_profile_groupimage 
+
+Replace  with:
+
+[code]
+<div class="team_usergroup_{$memprofile['usergroup']}" alt="{$usertitle}" title="{$usertitle}">{$memperms['image']}</div><br />
+[/code]
+
+Edit Template: showteam_usergroup_user
+
+
+Find:
+[code]
+<a href="{$user['profilelink']}"><strong>{$user['username']}</strong></a>
+[/code]
+
+Add this after:
+[code]
+<div class="team_usergroup_{$usergroup['gid']}" title="{$usergroup['title']}"><i>{$usergroup['title']}</i></div>
+[/code]
+
+
+Add in groups in groupimage input for example for each usergroup its respective group name:
+
+[quote]
+Group Image
+
+Here you can set a group image which will show on each post made by users in this group. 
+[/code]
+
+For administrator:
+[code]
+<i>administrator</i>
+[code]
+
+For super moderator:
+[code]
+<i>super moderator</i>
+[code]
+
+For moderator:
+[code]
+<i>moderator</i>
+[code]
+
+For registerred:
+
+[code]
+<i>registered</i>
+[/code]
+
+For guest:
+[code]
+<i>guest</i>
+[/code]
+
+For banned:
+[code]
+<i>banned</i>
+[/code]
+
+
+If you want to use the rest of the MyBB Team like styled usergroup image stylings
+then:
+
+
+Add additional usergroups 8 through 16 as follows:
+[quote]
+8) Management
+9) Development
+10) Design
+11) Security
+12) DevOps
+13) Support
+14) Community
+15) Web
+16) Editorial
+[/quote]
+
+
+
+
+Now, this simply is a starting point and by no means a finished project or what not and simply gets you started by adding a progress bar to a top menu, adds a top menu, some fonts, headroom.js, the footer, as well as the notices and social links as well as now adding the additional color stylesheets and  finically then adding the mybb team like styled groupimages and simply gets you started on something you can continue to expand upon simply provided if at all found helpful. Best of luck! 
+
