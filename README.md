@@ -17,20 +17,19 @@ Go to themes
 
 For example:
 
-admin/index.php?module=style-themes
+    admin/index.php?module=style-themes
 
 Select the import theme tab:
 
 For example:
 
-admin/index.php?module=style-themes&action=import
-
+    admin/index.php?module=style-themes&action=import
 
 and import your theme XML file:
 
 For example:
 
-MYBBCOMMLIKE-theme.xml
+    MYBBCOMMLIKE-theme.xml
 
 
 That is all as far as the theme XML file side of theme istallation.
