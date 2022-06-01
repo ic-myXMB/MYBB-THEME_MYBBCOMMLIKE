@@ -8,7 +8,7 @@
 		<tablespace><![CDATA[5]]></tablespace>
 		<borderwidth><![CDATA[0]]></borderwidth>
 		<colors><![CDATA[a:10:{s:5:"black";s:5:"Black";s:4:"calm";s:4:"Calm";s:4:"dawn";s:4:"Dawn";s:5:"earth";s:5:"Earth";s:5:"flame";s:5:"Flame";s:4:"leaf";s:4:"Leaf";s:5:"night";s:5:"Night";s:3:"sun";s:3:"Sun";s:8:"twilight";s:8:"Twilight";s:5:"water";s:5:"Water";}]]></colors>
-		<disporder><![CDATA[a:18:{s:10:"global.css";i:1;s:10:"usercp.css";i:2;s:9:"modcp.css";i:3;s:16:"star_ratings.css";i:4;s:14:"showthread.css";i:5;s:17:"thread_status.css";i:6;s:8:"css3.css";i:7;s:8:"main.css";i:9;s:9:"black.css";i:10;s:8:"calm.css";i:11;s:8:"dawn.css";i:12;s:9:"earth.css";i:13;s:9:"flame.css";i:14;s:8:"leaf.css";i:15;s:9:"night.css";i:16;s:7:"sun.css";i:17;s:12:"twilight.css";i:18;s:9:"water.css";i:19;}]]></disporder>
+		<disporder><![CDATA[a:19:{s:10:"global.css";i:1;s:10:"usercp.css";i:2;s:9:"modcp.css";i:3;s:16:"star_ratings.css";i:4;s:14:"showthread.css";i:5;s:17:"thread_status.css";i:6;s:8:"css3.css";i:7;s:8:"main.css";i:9;s:9:"black.css";i:10;s:8:"calm.css";i:11;s:8:"dawn.css";i:12;s:9:"earth.css";i:13;s:9:"flame.css";i:14;s:8:"leaf.css";i:15;s:9:"night.css";i:16;s:7:"sun.css";i:17;s:12:"twilight.css";i:18;s:9:"water.css";i:19;s:15:"groupimages.css";i:20;}]]></disporder>
 	</properties>
 	<stylesheets>
 		<stylesheet name="showthread.css" attachedto="showthread.php" version="1830"><![CDATA[ul.thread_tools,
@@ -3121,6 +3121,175 @@ div.jqi .jqisubstate .jqibuttons button{
 
 		]]>
 		</stylesheet>
+		<stylesheet name="groupimages.css" version="1830"><![CDATA[/* general styling of all team group */
+
+div[class^=team_usergroup_] {
+  display: inline-block;
+  margin: 6px 2px;
+  padding: 0 8px;
+  border: solid 1px #AAA;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #767676;
+  text-transform: uppercase;
+}
+
+div[class^=team_usergroup_] i {
+  font-style: normal;
+}
+
+/* default */
+
+/* individual styling of team group for user group 4 Administrator */
+
+div.team_usergroup_4 {
+  color: #FFF;
+  background-color: #008000;
+  border-color: #008000;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 3 Super Moderator */
+
+div.team_usergroup_3 {
+  color: #FFF;
+  background-color: #CC00CC;
+  border-color: #CC00CC;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 6 Moderator */
+
+div.team_usergroup_6 {
+  color: #FFF;
+  background-color: #CC00CC;
+  border-color: #CC00CC;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 2 Registered */
+
+div.team_usergroup_2 {
+  color: #FFF;
+  background-color: #0072BF;
+  border-color: #0072BF;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 1 Guest */
+
+div.team_usergroup_1 {
+	background: none;
+	vertical-align: middle;
+	padding-top: 2px;
+}
+
+/* individual styling of team group for user group 7 Banned */
+
+div.team_usergroup_7 {
+  background: none;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 5 Awaiting Activation */
+
+div.team_usergroup_5 {
+  background: none;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* Additional groups */
+
+/* individual styling of team group for user group 8 Management */
+
+div.team_usergroup_8 {
+  color: #008a00;
+  border-color: #008a00;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 9 Development */
+
+div.team_usergroup_9 {
+  color: #d23b67;
+  border-color: #d23b67;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 10 Design */
+
+div.team_usergroup_10 {
+  color: #657d08;
+  border-color: #657d08;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 11 Security */
+
+div.team_usergroup_11 {
+  color: #927878;
+  border-color: #927878;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 12 DevOps */
+
+div.team_usergroup_12 {
+  color: #8967de;
+  border-color: #8967de;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 13 Support */
+
+div.team_usergroup_13 {
+  color: #f35858;
+  border-color: #f35858;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 14 Community */
+
+div.team_usergroup_14 {
+  color: #2bb7c7;
+  border-color: #2bb7c7;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 15 Web */
+
+div.team_usergroup_15 {
+  color: #2ba4eb;
+  border-color: #2ba4eb;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+/* individual styling of team group for user group 16 Editorial */
+
+div.team_usergroup_16 {
+  color: #62c9a1;
+  border-color: #62c9a1;
+  vertical-align: middle;
+  padding-top: 2px;
+}
+
+]]>
+		</stylesheet>
 		<stylesheet name="black.css" attachedto="black" version="1830"><![CDATA[.main-menu__links__item--active {
     background: #202121 !important;
 }
@@ -3750,8 +3919,9 @@ a:active {
 			</span>
 			   <br />
 				<!-- Theme Credits -->
-				Theme by: <a href="https://community.mybb.com/user-1830.html" target="_blank">Justin S.</a>
-				&amp; <a href="https://community.mybb.com/user-145198.html" target="_blank">ic_myXMB</a>		
+				Theme by: <a href="https://community.mybb.com/user-1830.html" target="_blank">Justin S.</a>, 
+			    <a href="https://github.com/vintagedaddyo" target="_blank">Vintagedaddyo</a>
+				&amp; <a href="https://github.com/ic-myxmb" target="_blank">ic_myXMB</a>		
 		</div>
 	</div>
 </div>
@@ -4086,5 +4256,16 @@ Cancel</label>
 {$footer}
 </body>
 </html>]]></template>
+		<template name="memberlist_user_groupimage" version="1830"><![CDATA[<div class="team_usergroup_{$usergroup['gid']}" title="{$usergroup['title']}">{$usergroup['image']}</div>]]></template>
+		<template name="member_profile_groupimage" version="1830"><![CDATA[<div class="team_usergroup_{$memprofile['usergroup']}" alt="{$usertitle}" title="{$usertitle}">{$memperms['image']}</div><br />]]></template>
+		<template name="postbit_groupimage" version="1830"><![CDATA[<div class="team_usergroup_{$usergroup['gid']}" title="{$usergroup['title']}">{$usergroup['image']}</div>]]></template>
+		<template name="showteam_usergroup_user" version="1830"><![CDATA[<tr>
+<td width="75%" class="{$bgcolor}"><img src="{$theme['imgdir']}/buddy_{$status}.png" title="{$lang->$status}" alt="{$lang->$status}" style="vertical-align: middle;" /><a href="{$user['profilelink']}"><strong>{$user['username']}</strong></a>
+	<div class="team_usergroup_{$usergroup['gid']}" title="{$usergroup['title']}"><i>{$usergroup['title']}</i></div>
+</td>
+<td width="15%" class="{$bgcolor}">{$user['lastvisit']}</td>
+<td width="5%" class="{$bgcolor}"><div class="postbit_buttons">{$emailcode}</div></td>
+<td width="5%" class="{$bgcolor}"><div class="postbit_buttons">{$pmcode}</div></td>
+</tr>]]></template>
 	</templates>
 </theme>
