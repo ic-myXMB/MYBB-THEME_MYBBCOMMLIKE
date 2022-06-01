@@ -1,6 +1,22 @@
 # MYBB-THEME_MYBBCOMMLIKE
 
 
+This theme started simply as a written tutorial provided for users via a community post describing step by step on how to create such.
+
+
+If you desire is to see the tutorial steps to create this theme from start to finish:
+
+https://github.com/ic-myXMB/MYBB-THEME_MYBBCOMMLIKE/blob/main/TUT_Createanewmybbcomliketheme.txt
+
+* Tutorial credits: ic_myXMB 
+* Further credits to: Justin S. (as viewing their sources helped write the tutorial)
+* Further credits to: Vintagedaddyo (as viewing their sources helped write the tutorial)
+* A special thanks goes out to Vintagedaddyo (https:github.com/vintagedaddyo) for reading my tutorrial as I wrote it and adding input, suggestions & corrections and or additions to such. Also a special thanks to him for providing permission for his previous mycomm_default theme (2018) to be used as a reference while writing my tutorial and also for his past tutorial on the teamlike grouimage styling.
+* The tutorial is free to re-share as long as you retain any mentioned credits
+
+Eventually as I completed the tutorial, I submitted a theme.xml file via that tutorial post simply for anyone having trouble with tutorial steps and or just wanted to see the finished steps for visual example via a basic theme file. This eventually led to this repository being created and the theme being place here and the theme named being changed from "Dev" as is used for examples in the tutorial steps to now "MYBBCOMMLIKE".
+
+
 Theme installation notes:
 
 You  will need to download the files for example:
