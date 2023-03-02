@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme name="MYBBCOMMLIKE" version="1833">
+<theme name="MYBBCOMMLIKE" version="1831">
 	<properties>
 		<templateset><![CDATA[2]]></templateset>
 		<editortheme><![CDATA[mybb.css]]></editortheme>
@@ -11,7 +11,7 @@
 		<disporder><![CDATA[a:19:{s:10:"global.css";i:1;s:10:"usercp.css";i:2;s:9:"modcp.css";i:3;s:16:"star_ratings.css";i:4;s:14:"showthread.css";i:5;s:17:"thread_status.css";i:6;s:8:"css3.css";i:7;s:8:"main.css";i:9;s:9:"black.css";i:10;s:8:"calm.css";i:11;s:8:"dawn.css";i:12;s:9:"earth.css";i:13;s:9:"flame.css";i:14;s:8:"leaf.css";i:15;s:9:"night.css";i:16;s:7:"sun.css";i:17;s:12:"twilight.css";i:18;s:9:"water.css";i:19;s:15:"groupimages.css";i:20;}]]></disporder>
 	</properties>
 	<stylesheets>
-		<stylesheet name="showthread.css" attachedto="showthread.php" version="1833"><![CDATA[ul.thread_tools,
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1831"><![CDATA[ul.thread_tools,
 ul.thread_tools li {
 	list-style: none;
 	padding: 0;
@@ -57,10 +57,9 @@ ul.thread_tools li.poll {
 
 
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1833"><![CDATA[.star_rating,
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1831"><![CDATA[.star_rating,
 .star_rating li a:hover,
 .star_rating .current_rating {
 	background: url('themes/mybbcommlike/images/star_rating.png') left -1000px repeat-x;
@@ -148,10 +147,9 @@ td .star_rating {
 	padding-right: 5px;
 }
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1833"><![CDATA[.thread_status {
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1831"><![CDATA[.thread_status {
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -227,10 +225,9 @@ td .star_rating {
 	background-position: 0 -320px;
 }
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="usercp.css" attachedto="usercp.php|private.php" version="1833"><![CDATA[.usercp_nav_item {
+		<stylesheet name="usercp.css" attachedto="usercp.php|private.php" version="1831"><![CDATA[.usercp_nav_item {
 	display: block;
 	padding: 1px 0 1px 23px;
 	background-image: url('themes/mybbcommlike/images/usercp_sprite.png');
@@ -384,10 +381,9 @@ td .star_rating {
 	font-weight: bold;
 }
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="modcp.css" attachedto="modcp.php" version="1833"><![CDATA[.modcp_nav_item {
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1831"><![CDATA[.modcp_nav_item {
 	display: block;
 	padding: 1px 0 1px 23px;
 	background-image: url('themes/mybbcommlike/images/modcp_sprite.png');
@@ -485,10 +481,9 @@ td .star_rating {
 	text-decoration: none;
 }
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="css3.css" version="1833"><![CDATA[tr td.trow1:first-child,
+		<stylesheet name="css3.css" version="1831"><![CDATA[tr td.trow1:first-child,
 tr td.trow2:first-child,
 tr td.trow_shaded:first-child {
 	border-left: 0;
@@ -630,10 +625,9 @@ div.error {
    	 border-radius: 6px;
 }
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="main.css" version="1833"><![CDATA[body{
+		<stylesheet name="main.css" version="1831"><![CDATA[body{
 	text-align: unset;
 }
 .thead{
@@ -1309,10 +1303,9 @@ fieldset{
 }
 
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="global.css" version="1833"><![CDATA[body {
+		<stylesheet name="global.css" version="1831"><![CDATA[body {
 	background: #fff;
 	color: #333;
 	text-align: center; 
@@ -3134,10 +3127,9 @@ div.jqi .jqisubstate .jqibuttons button{
 /** Impromptu End */
 
 		
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="groupimages.css" version="1833"><![CDATA[/* general styling of all team group */
+		<stylesheet name="groupimages.css" version="1831"><![CDATA[/* general styling of all team group */
 
 div[class^=team_usergroup_] {
   display: inline-block;
@@ -3305,10 +3297,9 @@ div.team_usergroup_16 {
 }
 
 
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="black.css" attachedto="black" version="1833"><![CDATA[.main-menu__links__item--active {
+		<stylesheet name="black.css" attachedto="black" version="1831"><![CDATA[.main-menu__links__item--active {
     background: #202121 !important;
 }
 .main-menu__links__item--active .main-menu__links__item__link:hover,
@@ -3381,10 +3372,9 @@ a:active {
 	color: #fff;
 	border-color: #000;
 }
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="calm.css" attachedto="calm" version="1833"><![CDATA[.main-menu__links__item--active {
+		<stylesheet name="calm.css" attachedto="calm" version="1831"><![CDATA[.main-menu__links__item--active {
     background: #385947 !important;
 }
 .main-menu__links__item--active .main-menu__links__item__link:hover,
@@ -3429,10 +3419,9 @@ a:active {
 	color: #fff;
 	border-color: #263c30;
 }
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="dawn.css" attachedto="dawn" version="1833"><![CDATA[
+		<stylesheet name="dawn.css" attachedto="dawn" version="1831"><![CDATA[
 .main-menu__links__item--active {
     background: #d56c2c !important;
 }
@@ -3489,10 +3478,9 @@ a:active {
 }
 
 
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="earth.css" attachedto="earth" version="1833"><![CDATA[
+		<stylesheet name="earth.css" attachedto="earth" version="1831"><![CDATA[
 .main-menu__links__item--active {
     background: #4a3a2e !important;
 }
@@ -3549,10 +3537,9 @@ a:active {
 }
 
 
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="flame.css" attachedto="flame" version="1833"><![CDATA[
+		<stylesheet name="flame.css" attachedto="flame" version="1831"><![CDATA[
 .main-menu__links__item--active {
     background: #750000 !important;
 }
@@ -3609,10 +3596,9 @@ a:active {
 }
 
 
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="leaf.css" attachedto="leaf" version="1833"><![CDATA[
+		<stylesheet name="leaf.css" attachedto="leaf" version="1831"><![CDATA[
 .main-menu__links__item--active {
     background: #386e21 !important;
 }
@@ -3669,10 +3655,9 @@ a:active {
 }
 
 
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="night.css" attachedto="night" version="1833"><![CDATA[
+		<stylesheet name="night.css" attachedto="night" version="1831"><![CDATA[
 .main-menu__links__item--active {
     background: #022338 !important;
 }
@@ -3729,10 +3714,9 @@ a:active {
 }
 
 
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="sun.css" attachedto="sun" version="1833"><![CDATA[
+		<stylesheet name="sun.css" attachedto="sun" version="1831"><![CDATA[
 .main-menu__links__item--active {
     background: #ffdd4d !important;
 	color: #000 !important;
@@ -3800,10 +3784,9 @@ a:active {
 }
 
 
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="twilight.css" attachedto="twilight" version="1833"><![CDATA[
+		<stylesheet name="twilight.css" attachedto="twilight" version="1831"><![CDATA[
 .main-menu__links__item--active {
     background: #273a46 !important;
 }
@@ -3860,10 +3843,9 @@ a:active {
 }
 
 
-		
 		]]>
 		</stylesheet>
-		<stylesheet name="water.css" attachedto="water" version="1833"><![CDATA[
+		<stylesheet name="water.css" attachedto="water" version="1831"><![CDATA[
 .main-menu__links__item--active {
     background: #1e6365 !important;
 }
@@ -3920,7 +3902,6 @@ a:active {
 }
 
 
-		
 		]]>
 		</stylesheet>
 	</stylesheets>
